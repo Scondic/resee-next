@@ -5,10 +5,10 @@ export default function Navigation() {
     const router = useRouter()
 
     return (
-        <div className='container mx-auto'>
+        <div className={'mx-5 sm:container sm:mx-auto'}>
             <div className='flex items-center justify-between my-10'>
                 <div className='text-2xl font-semibold'>Re:see</div>
-                <div className='flex gap-16'>
+                <div className='md:flex gap-16 hidden'>
                     <Link href={ "/" }>
                         <a className={ `text-lg ${router.pathname === '/' ? 'text-slate-900' : 'text-slate-600'} hover:text-slate-900 cursor-pointer transition duration-300 font-semibold` }>Магазин</a>
                     </Link>
